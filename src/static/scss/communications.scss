@@ -1,0 +1,50 @@
+.communications{
+  margin: 240px 0 200px;
+  &__main{
+    max-width: 592px;
+    margin-bottom: 64px;
+  }
+  &__wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width : 991px){
+    margin: 128px 0;
+    &__wrap{flex-wrap: wrap;}
+    &__main{
+      margin-bottom: 32px;
+      max-width: unset;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    margin: 128px 0 64px;
+    &__main{margin-top: 48px;}
+    &__wrap{display: block;}
+  }  
+}
+.communications-col{
+  width: calc((100% - 64px) / 3);
+  &__icn{margin-bottom: 16px;}
+  &__title{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: .5px;
+  }
+  &__txt{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .75px;
+    color: #62696D;
+  }
+  @media only screen and (max-width : 991px){
+    width: calc(50% - 12px);
+    margin-bottom: 32px;
+    &:last-child{margin-bottom: 0;}
+  }
+  @media only screen and (max-width : 767px){
+    width: 100%;
+  }  
+}

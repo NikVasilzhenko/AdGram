@@ -1,0 +1,107 @@
+.better{
+  background-color: #002B41;
+  padding: 200px 0 157px;
+  color: rgba(255, 255, 255, .5);
+  &__title{
+    width: 50%;
+    padding-right: 16px;
+    margin-bottom: 64px;
+    color: #fff;
+  }
+  &__row{
+    margin-bottom: 160px;
+    &:last-child{margin-bottom: 0;}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    &-pic{
+      width: 50%;
+      padding-left: 16px;
+      img{margin: 0 auto;}
+      &_1 img{width: 461px;}
+      &_2 img{width: 388px;}
+      &_3 img{width: 385px;}
+      &_4 img{width: 560px;}
+      &_5 img{width: 481px;}
+      &_5 img{width: 558px;}
+    }
+    &-main{
+      width: 50%;
+      padding-right: 16px;
+      max-width: 504px;
+    }
+    &-item{
+      margin-bottom: 48px;
+      padding-left: 26px;
+      position: relative;
+      &:last-child{margin-bottom: 0;}
+      &.active{
+        color: #FAEECC;
+        &::before{
+          content: '';
+          display: block;
+          width: 2px;
+          height: 100%;
+          background-color: #FAEECC;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      &.hide{display: none;}
+    }
+    &-title{
+      margin-bottom: 16px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: .1px;
+    }
+    &-txt{
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: .5px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 64px 0;
+    &__title{
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 64px;
+    }
+    &__row{
+      margin-bottom: 64px;
+      &:last-child{margin-bottom: 0;}
+      display: block;
+      &-pic{
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 16px;
+        img{margin: 0;}
+        &_1 img{width: 227px;}
+        &_2 img{width: 156px;}
+        &_3 img{width: 198px;}
+      }
+      &-main{
+        width: 100%;
+        padding-right: 0;
+        max-width: unset;
+      }
+      &-item{
+        display: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        &.active{
+          display: block;
+          color: #fff;
+          &::before{display: none;}
+        }
+      }
+      &-txt{
+        br{display: none;}
+      }
+    }
+  }
+}

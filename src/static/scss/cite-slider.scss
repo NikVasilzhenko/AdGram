@@ -1,0 +1,92 @@
+.cite-slider{
+  margin: 96px 0 160px;
+  &__wrap{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__pagination{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__tab{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 12px;
+    border: 3px solid #EBEDEE;
+    cursor: pointer;
+    &.active{
+      border-color: #0088cc;
+    }
+  }
+  &__quote{
+    display: block;
+    padding: 0;    
+    position: relative;
+    z-index: 2;
+    margin-bottom: 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: .2px;
+    &::before,
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 98px;
+      height: 80px;
+      background: center center no-repeat;
+      background-size: contain;
+    }
+    &::before{
+      top: 0;
+      left: 0;
+      background-image: url(../img/svg/quote-grey-open.svg);
+    }
+    &::after{
+      bottom: 0;
+      right: 0;
+      background-image: url(../img/svg/quote-grey-close.svg);
+    }
+  }
+  &__footer{text-align: center;}
+  &__author-name{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: .15px;
+    margin-bottom: 4px;
+  }
+  &__author-status{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .75px;
+    color: #7D8B92;
+  }
+  &__slide{
+    display: none;
+    &.active{display: block;}
+  }
+  @media only screen and (max-width : 767px){
+    margin: 64px 0;
+    &__pagination{margin-bottom: 22px;}
+    &__tab{
+      width: 38px;
+      height: 38px;
+      margin: 0 9px;
+    }
+    &__quote{
+      font-size: 19px;
+      line-height: 28px;
+      letter-spacing: .15px;
+      &::before,
+      &::after{display: none;}
+    }
+  }
+}

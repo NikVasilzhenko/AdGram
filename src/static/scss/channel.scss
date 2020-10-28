@@ -1,0 +1,45 @@
+.channel{
+  margin-bottom: 200px;  
+  &__wrap{padding-top: 96px;}
+  &__main{
+    width: 50%;
+    max-width: calc(100% - 345px - 24px); 
+    padding-top: 24px;
+    float: left;
+  }
+  &__content{float: right;}
+  &__small{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .75px;
+    color: #7D8B92;
+    float: left;
+    width: 50%;
+    max-width: calc(100% - 345px - 24px);
+    clear: both;
+    transform: translateY(-50%);
+  }
+  @media only screen and (max-width : 991px){
+    margin-bottom: 128px;
+  }
+  @media only screen and (max-width : 767px){
+    margin: 64px 0;  
+    &__wrap{padding: 0;}
+    &__main{
+      width: 100%;
+      max-width: unset; 
+      padding-top: 0;
+      float: none;
+      margin-bottom: 100px;
+    }
+    &__content{float: none;}
+    &__small{
+      float: none;
+      display: block;
+      margin-top: 67px;
+      width: 100%;
+      max-width: unset;
+      transform: none;
+    }
+  }
+}

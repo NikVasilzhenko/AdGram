@@ -1,0 +1,106 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  width: 100%;
+  &__wrap{
+    width: 100%;
+    max-width: 1824px;
+    padding: 16px;    
+  }
+  &__burger{display: none;}
+  &__wrap,
+  &__right,
+  &__left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+  .header-logo{margin-right: 80px;}
+  .lang{margin-right: 24px;}
+  @media only screen and (max-width : 1299px){
+    .header-logo{margin-right: 16px;}
+  }
+  @media only screen and (max-width : 1199px){
+    .lang{display: none;}
+    &__left,
+    &__wrap{
+      display: block;
+      position: relative;
+    }
+    .header-logo{margin-right: auto;}
+    &__burger{
+      display: block;
+      position: absolute;
+      left: 16px;
+      top: 20px;
+      z-index: 3;
+    }
+  }
+}
+.header-logo{
+  display: block;
+  width: 169px;  
+  @media only screen and (max-width : 1199px){
+    margin: 0 auto;
+  }
+}
+.header-nav{
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    li{
+      margin-right: 16px;
+      a{
+        display: block;
+        padding: 16px;
+        white-space: nowrap;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .75px;
+        color: rgba(255, 255, 255, 0.75);
+        border-radius: 4px;
+        &:hover,
+        &.active{
+          color: #fff;
+          background-color: rgba(255, 255, 255, .1);
+        }
+      }
+    }    
+  }
+  @media only screen and (max-width : 1299px){
+    ul li{margin-right: 8px;}
+  }
+  @media only screen and (max-width : 1199px){
+    display: none;
+  }
+}
+.header-enter{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: .75px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-right: 24px;
+  &:hover{color: #fff;}
+  @media only screen and (max-width : 1199px){
+    display: none;
+  }
+}
+.header-btn{
+  @media only screen and (max-width : 1199px){
+    display: none;
+  }
+}
+@media only screen and (max-width : 1299px){}
+@media only screen and (max-width : 1023px){}
+@media only screen and (max-width : 991px){}
+@media only screen and (max-width : 767px){}
+@media only screen and (max-width : 479px){}
+@media only screen and (max-width : 359px){}
+@media only screen and (max-width : 320px){}
+@media screen and (orientation: portrait){}
+@media screen and (orientation: landscape){}

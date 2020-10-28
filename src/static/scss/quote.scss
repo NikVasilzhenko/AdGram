@@ -1,0 +1,97 @@
+.quote{
+  padding: 230px 0 197px;
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__logo{width: 402px;}
+  &__main{
+    width: calc(100% - 402px);
+    max-width: 800px;
+  }
+  &__quote{
+    display: block;
+    padding: 0;
+    margin: 0 0 32px;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: .2px;
+    &::before{
+      content: '';
+      display: block;
+      background: center center no-repeat;
+      background-size: contain;
+      width: 100px;
+      height: 81px;
+      position: absolute;
+      z-index: -1;
+      top: -32px;
+      left: -32px;
+    }
+    &_yellow{
+      color: #A67C00;
+      &::before{background-image: url(../img/svg/quote-yellow.svg);}
+    }
+    &_blue{
+      color: #005782;
+      &::before{background-image: url(../img/svg/quote-blue.svg);}
+    }
+  }
+  &__author{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &-pic{
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 24px;
+    }
+    &-name{
+      margin-bottom: 2px;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: .5px;
+    }
+    &-status{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: .75px;
+      color: #7D8B92;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 64px 0;
+    &__wrap{display: block;}
+    &__logo{
+      width: 183px;
+      margin-bottom: 0;
+    }
+    &__main{width: 100%;}
+    &__quote{
+      margin: 0 0 24px;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0;
+      &::before{
+        width: 70px;
+        height: 57px;
+        top: -16px;
+        left: 0;
+        background-size: contain;
+      }
+    }
+  }
+  @media only screen and (max-width : 414px){
+    &__logo{width: 156px;}
+  }
+  @media only screen and (max-width : 359px){
+    &__logo{width: 136px;}
+  }
+}

@@ -1,0 +1,99 @@
+.banners{
+  margin: 236px 0 160px;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    .sec-title{margin-bottom: 0;}
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #D9EDF7;
+    border-radius: 4px;
+    margin-left: 16px;
+    svg{
+      display: block;
+      fill: #0088CC;
+    }
+    &:hover{
+      background-color: #0088CC;
+      svg{fill: #fff;}
+    }
+  }
+  &__slider{
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    .slick-list{overflow: visible;}
+    .slick-track{
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+  }
+  .slick-slide{height: unset;}
+  @media only screen and (max-width : 991px){
+    margin: 128px 0;
+    &__nav{display: none;}
+    &__slider{
+      margin-left: -12px;
+      width: 736px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__slider{width: 324px;}
+  }
+  @media only screen and (max-width : 359px){
+    &__slider{width: 292px;}
+  }  
+}
+.banner-slide{
+  margin: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  &__main{margin-bottom: 16px;}
+  &__pic{
+    width: 100%;
+    padding-top: 56.25%;
+    background: center center no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  &__title{
+    margin-bottom: 4px;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    color: #1C1D21;
+  }
+  &__txt{
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    color: #B4B4B4;
+    margin-bottom: 8px;
+  }
+  &__price{
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    color: #1C1D21;
+    b{font-weight: bold;}
+  }
+  @media only screen and (max-width : 991px){
+    margin: 0 12px;
+  }
+}

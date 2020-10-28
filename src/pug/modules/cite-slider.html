@@ -1,0 +1,44 @@
+<section class="cite-slider">
+  <div class="container">
+    <div class="cite-slider__wrap">
+      <div class="cite-slider__pagination">
+        <div class="cite-slider__tab active" onclick="showSlide(this, 'js-slide-1');"><img src="img/pic/geotgiy-soloncev.png" alt="Георгий Солонцов"></div>
+        <div class="cite-slider__tab" onclick="showSlide(this, 'js-slide-2');"><img src="img/pic/alexey-varianov.png" alt="Алексей Валерьянов"></div>
+        <div class="cite-slider__tab" onclick="showSlide(this, 'js-slide-3');"><img src="img/pic/alexey-varianov.png" alt="Any Photo"></div>
+      </div>
+      <div class="cite-slider__slides">
+        <div class="cite-slider__slide active" id="js-slide-1">
+          <blockquote class="cite-slider__quote">AdGram ускорил работу нашей компании. Теперь для размещения рекламы не нужно вручную вести переговоры с каждым администратором. Мы стали экономить время. Это круто!</blockquote>
+          <div class="cite-slider__footer">
+            <div class="cite-slider__author-name">Георгий Солонцов</div>
+            <div class="cite-slider__author-status">Администратор Telegram-канал “Интересные факты”</div>
+          </div>
+        </div>
+        <div class="cite-slider__slide" id="js-slide-2">
+          <blockquote class="cite-slider__quote">AdGram ускорил работу нашей компании. Теперь для размещения рекламы не нужно вручную вести переговоры с каждым администратором. Мы стали экономить время. Это круто!</blockquote>
+          <div class="cite-slider__footer">
+            <div class="cite-slider__author-name">Алексей Валерьянов</div>
+            <div class="cite-slider__author-status">Ведущий Маркетолог в Co-Co Agency</div>
+          </div>
+        </div>
+        <div class="cite-slider__slide" id="js-slide-3">
+          <blockquote class="cite-slider__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla veniam recusandae, veritatis neque! Ab, aut!</blockquote>
+          <div class="cite-slider__footer">
+            <div class="cite-slider__author-name">Any Person</div>
+            <div class="cite-slider__author-status">Any status</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  function showSlide($this, slideId){
+    if( !($this.classList.contains('active')) ){
+      document.querySelector('.cite-slider__tab.active').classList.remove('active');
+      document.querySelector('.cite-slider__slide.active').classList.remove('active');
+      $this.classList.add('active');
+      document.getElementById(slideId).classList.add('active');
+    }
+  }
+</script>

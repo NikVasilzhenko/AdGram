@@ -1,0 +1,33 @@
+.lang{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: .75px;  
+  &__icn{
+    margin-right: 8px;
+    display: block;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    svg{transition: fill .25s;}
+  }
+  &_header{
+    color: rgba(255, 255, 255, 0.75);
+    .lang__icn svg{fill: rgba(255, 255, 255, .75);}
+    &:hover{
+      color: #fff;
+      .lang__icn svg{fill: #fff;}
+    }
+  }
+  &_footer{
+    color: #96A1A7;
+    .lang__icn svg{fill: #96A1A7;}
+    &:hover{
+      color: #000;
+      .lang__icn svg{fill: #000;}
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.integrations{
+  margin: 200px 0;
+  &__wrap{
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sec-title{max-width: unset;}
+  .txt{margin-bottom: 32px;}
+  @media only screen and (max-width : 991px){
+    margin: 128px 0;
+    &__wrap{max-width: 712px;}
+    .sec-title{margin-bottom: 32px;}
+  }
+  @media only screen and (max-width : 767px){
+    margin: 64px 0;
+    &__wrap{text-align: left;}
+  }
+}

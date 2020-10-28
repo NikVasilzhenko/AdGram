@@ -1,0 +1,21 @@
+<svg width="340" height="85" viewBox="0 0 340 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.5" x="39" y="3" width="1" height="79.5031" fill="#F5DACC"/>
+<rect opacity="0.5" x="234" y="3" width="1" height="79.5031" fill="#F5DACC"/>
+<rect opacity="0.5" x="169" y="3" width="1" height="79.5031" fill="#F5DACC"/>
+<rect opacity="0.5" x="104" y="3" width="1" height="79.5031" fill="#F5DACC"/>
+<rect opacity="0.5" x="299" y="3" width="1" height="79.5031" fill="#F5DACC"/>
+<path d="M170.5 48.218L104.5 64.1186L39.5 72.5658L2 82.5037H338V7.47266L313.304 10.7019C304.452 11.8594 295.722 13.8048 287.216 16.5149L234.5 33.3112L170.5 48.218Z" fill="url(#paint0_linear)"/>
+<path opacity="0.7" d="M2 82.9998L39.5 73.0619L104.5 64.6147L170.5 48.7141L234.5 33.8073L287.216 17.011C295.722 14.3009 304.452 12.3555 313.304 11.198L338 7.96875" stroke="#CC4400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 80L38.5 69.5364L103.5 60.6424L169.5 43.9007L233.5 28.2053L285.675 10.7021C294.539 7.72841 303.662 5.58999 312.924 4.31477L337 1" stroke="#CC4400" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="299.5" cy="13.5" r="3.5" fill="#CC4400"/>
+<circle cx="234.5" cy="33.5" r="3" fill="white" stroke="#CC4400"/>
+<circle cx="169.5" cy="49.5" r="3" fill="white" stroke="#CC4400"/>
+<circle cx="104.5" cy="64.5" r="3" fill="white" stroke="#CC4400"/>
+<circle cx="39.5" cy="73.5" r="3" fill="white" stroke="#CC4400"/>
+<defs>
+<linearGradient id="paint0_linear" x1="170" y1="7.47266" x2="170" y2="82.5037" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5DACC"/>
+<stop offset="1" stop-color="#F5DACC" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

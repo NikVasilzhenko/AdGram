@@ -1,0 +1,212 @@
+.some-about-market{
+  margin: 124px 0 275px;
+  &__wrap{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &__main{
+    width: 420px;
+    padding-right: 15px;
+  }
+  &__grid{
+    flex-grow: 1;
+    position: relative;
+  }
+  @media only screen and (max-width : 1199px){
+    margin-bottom: 295px;
+  }
+  @media only screen and (max-width : 1149px){
+    margin: 104px 0 0;
+    &__wrap{display: block;}
+    &__main{
+      width: 344px;
+      padding: 0;
+    }
+    &__grid{
+      width: 100%;
+      padding-top: 64px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    margin: 32px 0 64px;
+    &__main{
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    &__grid{
+      position: static;
+      width: calc(100% + 32px);
+      margin-left: -16px;
+      overflow-x: auto;
+      padding: 18px 0;
+      &-wrap{
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 0 0 0 16px;
+        width: max-content;
+      }
+    }
+  }
+}
+.some-about-market-card{
+  padding: 32px 24px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(43, 51, 56, .08);
+  border-radius: 16px;
+  position: absolute;
+  overflow: hidden;
+  &__title{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: .15px;
+  }
+  &__txt{
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .75px;
+    color: #7D8B92;
+  }
+  img{position: absolute;}
+  &_1{
+    width: 280px;
+    height: 255px;
+    left: 0;
+    bottom: calc(100% + 32px);
+    img{
+      bottom: 32px;
+      left: 24px;
+    }
+  }
+  &_2{
+    width: 384px;
+    height: 220px;
+    left: 312px;
+    bottom: calc(100% + 32px);
+    img{
+      bottom: 32px;
+      left: 24px;
+    }
+  }
+  &_3{
+    width: 384px;
+    height: 152px;
+    left: 103px;
+    top: 9px;
+    img{
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    .some-about-market-card__title{width: 232px;}
+  }
+  &_4{
+    width: 280px;
+    height: 212px;
+    left: 520px;
+    top: 9px;
+    img{
+      bottom: 24px;
+      right: 24px;
+    }
+    .some-about-market-card__title{width: 232px;}
+  }
+  &_5{
+    width: 280px;
+    height: 282px;
+    left: 0;
+    top: calc(100% - 7px);
+    img{
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &_6{
+    width: 384px;
+    height: 180px;  
+    left: 312px;
+    top: calc(100% + 53px);
+    img{
+      bottom: 20px;
+      right: 0;
+    }
+    .some-about-market-card__title{width: 232px;}
+  }
+  @media only screen and (max-width : 1279px){
+    &_3{left: 0;}
+    &_4{left: 416px;}
+  }
+  @media only screen and (max-width : 1199px){
+    &_5{top: calc(100% + 22px);}
+    &_6{top: calc(100% + 82px);}
+  }
+  @media only screen and (max-width : 1149px){
+    &_1{
+      left: 368px;
+      bottom: auto;
+      top: -388px;
+    }
+    &_2{
+      left: 368px;
+      bottom: auto;
+      top: -109px;
+      width: 368px;
+    }
+    &_3{
+      position: relative;
+      top: 0;
+      left: 0;
+      float: left;
+      margin: 0 24px 24px 0;
+      width: 344px;
+    }
+    &_4{
+      position: relative;
+      left: 0;
+      top: 0;
+      float: left;
+      margin-top: 74px;
+    }
+    &_5{
+      position: relative;
+      left: 0;
+      top: 0;
+      float: left;
+      clear: both;
+      margin-top: -110px;
+    }
+    &_6{
+      position: relative;
+      left: 0;
+      top: 0;
+      float: left;
+      margin: 24px 0 0 24px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    padding: 24px;
+    width: 302px !important;
+    height: 262px !important;
+    flex-shrink: 0;
+    margin: 0 16px 0 0 !important;
+    &__title{
+      position: relative;
+      z-index: 2;
+    }
+    img{position: absolute;}
+  }
+  @media only screen and (max-width : 359px){
+    width: 268px !important;
+    padding: 24px 8px;
+  }
+  
+}

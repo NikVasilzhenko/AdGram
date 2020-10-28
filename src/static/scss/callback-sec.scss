@@ -1,0 +1,38 @@
+.callback-sec{
+  margin: 186px 0 200px;
+  &__wrap{
+    background: url(../img/svg/callback-bg.svg) center center no-repeat, linear-gradient(180deg, #F8F9F9 0%, #EBEDEE 100%);
+    background-size: cover cover;
+    border-radius: 32px;
+    padding: 128px 64px;
+    text-align: center;
+  }
+  &__title{
+    max-width: 100%;
+    text-align: center;
+  }
+  &__txt{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 48px;
+  }
+  &__bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn{
+    margin: 0 8px;
+    width: 220px;
+  }
+  @media only screen and (max-width : 767px){
+    margin: 64px 0;
+    &__wrap{padding: 64px 16px;}
+    &__txt{margin-bottom: 48px;}
+    &__bar{display: block;}
+    &__btn{
+      margin: 16px 0 0;
+      width: 100%;
+    }
+  }
+}
