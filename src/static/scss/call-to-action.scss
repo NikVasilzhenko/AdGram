@@ -1,0 +1,21 @@
+.call-to-action{
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #EBEDEE;
+  box-shadow: 0 16px 20px rgba(43, 51, 56, .16);
+  border-radius: 16px;
+  &__title{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: .15px;
+  }
+  &__txt{
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .75px;
+  }
+  &__btn{width: 100%;}
+}
