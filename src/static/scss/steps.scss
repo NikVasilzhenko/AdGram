@@ -119,7 +119,10 @@
       img{width: 704px;}
     }
     &--2{
-      img{width: 808px;}
+      img{
+        width: 808px;
+        transform: translateX(20px);
+      }
     }
     &--3{
       img{width: 489px;}
@@ -243,7 +246,10 @@
         }
       }
       &--2{
-        img{width: 100%;}
+        img{
+          width: 100%;
+          transform: none;
+        }
       }
       &--3{
         img{width: 100%;}
