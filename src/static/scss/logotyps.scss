@@ -1,5 +1,10 @@
 .logotyps{
   margin: 48px 0 24px;
+  text-align: center;
+  .sec-title{
+    margin-left: auto;
+    margin-right: auto;
+  }
   &__row{
     display: flex;
     align-items: center;

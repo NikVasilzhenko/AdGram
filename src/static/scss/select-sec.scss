@@ -79,7 +79,18 @@
     height: 64px;
     margin-bottom: 64px;
     position: relative;
+    position: relative;
   }
+  &__hide,
+  &__show{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    transition: opacity .25s;
+  }
+  &__show{opacity: 1;}
+  &__hide{opacity: 0;}
   &__title{
     margin-bottom: 16px;
     font-weight: bold;
@@ -114,6 +125,8 @@
       opacity: 1;
       transform: translateY(0);
     }
+    .select-sec-item__hide{opacity: 1;}
+    .select-sec-item__show{opacity: 0;}
   }
   @media only screen and (max-width : 991px){
     width: 344px;

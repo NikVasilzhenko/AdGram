@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header__wrap">
-    <button class="btn burger header__burger" id="js-burger" onclick="openBar()" title="Menu">
+    <button class="btn burger header__burger" onclick="openBar()" title="Menu">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M5 7H19C19.5523 7 20 6.55228 20 6C20 5.44772 19.5523 5 19 5H5C4.44772 5 4 5.44772 4 6C4 6.55228 4.44772 7 5 7Z" fill="white" fill-opacity="0.5"/>
         <path d="M5 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" fill="white" fill-opacity="0.5"/>
@@ -33,3 +33,76 @@
     </div>    
   </div>
 </header>
+<div class="mob-menu-overlay"id="js-mob-menu-overlay" onclick="openBar()"></div>
+<div class="mob-menu" id="js-mob-menu">
+  <div class="mob-menu__wrap">
+    <div class="mob-menu__main">
+      <button class="btn burger mob-menu__close" onclick="openBar()" title="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.7071 6.70711C19.0976 6.31658 19.0976 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29289 17.2929C4.90237 17.6834 4.90237 18.3166 5.29289 18.7071C5.68342 19.0976 6.31658 19.0976 6.70711 18.7071L12 13.4142L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711Z" fill="#96A1A7"/>
+        </svg>
+      </button>
+      <a href="/" class="mob-menu__logo">
+        <img src="img/svg/logo-color.svg" alt="AdGram">
+      </a>
+      <nav class="mob-menu__nav">
+        <ul>
+          <li>
+            <a href="#">
+              <span>Каталог каналов</span>
+              <i>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071Z" fill="#7D8B92"/>
+                </svg>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Рекламодателям</span>
+              <i>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071Z" fill="#7D8B92"/>
+                </svg>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Администраторам</span>
+              <i>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071Z" fill="#7D8B92"/>
+                </svg>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Агенствам</span>
+              <i>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071Z" fill="#7D8B92"/>
+                </svg>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Статьи</span>
+              <i>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071Z" fill="#7D8B92"/>
+                </svg>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mob-menu__footer">
+      <a href="#" class="btn btn_l btn_white mob-menu__btn">Войти</a>
+      <a href="#" class="btn btn_l btn_orange mob-menu__btn">Зарегистрироваться</a>
+    </div>
+  </div>
+</div>

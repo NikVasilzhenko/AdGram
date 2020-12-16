@@ -86,3 +86,9 @@ function Fshowerror (obj){
 		this.OBJ = null;
 	}
 }
+
+//mob menu
+function openBar(){
+  document.getElementById('js-mob-menu-overlay').classList.toggle('open');
+  document.getElementById('js-mob-menu').classList.toggle('open');  
+}

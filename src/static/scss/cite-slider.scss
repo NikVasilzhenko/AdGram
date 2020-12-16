@@ -46,12 +46,12 @@
     }
     &::before{
       top: 0;
-      left: 0;
+      left: -100px;
       background-image: url(../img/svg/quote-grey-open.svg);
     }
     &::after{
       bottom: 0;
-      right: 0;
+      right: -100px;
       background-image: url(../img/svg/quote-grey-close.svg);
     }
   }
@@ -72,6 +72,12 @@
   &__slide{
     display: none;
     &.active{display: block;}
+  }
+  @media only screen and (max-width : 991px){
+    &__quote{
+      &::before{left: 0;}
+      &::after{right: 0;}
+    }
   }
   @media only screen and (max-width : 767px){
     margin: 64px 0;
