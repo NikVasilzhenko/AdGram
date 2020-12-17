@@ -1,14 +1,6 @@
 .earn{
   position: relative;
-  padding: 248px 0;
-  &__bg{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  margin: 116px 0 160px;
   .container{
     position: relative;
     z-index: 2;
@@ -22,12 +14,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DDE1E2;
   }
   @media only screen and (max-width : 991px){
-    padding: 128px 0;
+    margin: 128px 0;
+    &__wrap{padding-bottom: 80px;}
   }
   @media only screen and (max-width : 767px){
-    padding: 80px 0;
+    margin: 80px 0;
     &__bg{
       left: 50%;
       transform: translateX(-50%);
@@ -38,7 +33,11 @@
       text-align: left;
       margin-bottom: 48px;
     }
-    &__wrap{display: block;}
+    &__wrap{
+      display: block;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
   }
 }
 .earn-col{

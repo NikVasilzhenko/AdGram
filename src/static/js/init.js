@@ -25,3 +25,17 @@ $('#js-banners-next').click(function(){
 $('#js-banners-prev').click(function(){
   $('#js-banners-slider').slick('slickPrev');
 });
+
+$('#js-cite-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: false
+});
+$('#js-cite-slider-next').click(function(){
+  $('#js-cite-slider').slick('slickNext');
+});
+$('#js-cite-slider-prev').click(function(){
+  $('#js-cite-slider').slick('slickPrev');
+});

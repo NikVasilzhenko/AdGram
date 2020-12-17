@@ -1,44 +1,76 @@
 <section class="cite-slider">
-  <div class="container">
+    <button class="btn cite-slider-arrow cite-slider-arrow__prev" id="js-cite-slider-prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 5.29289C13.0976 5.68342 13.0976 6.31658 12.7071 6.70711L9.41421 10L12.7071 13.2929C13.0976 13.6834 13.0976 14.3166 12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289L11.2929 5.29289C11.6834 4.90237 12.3166 4.90237 12.7071 5.29289Z"></path>
+      </svg>
+    </button>
+    <button class="btn cite-slider-arrow cite-slider-arrow__next" id="js-cite-slider-next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 14.7071C6.90237 14.3166 6.90237 13.6834 7.29289 13.2929L10.5858 10L7.29289 6.70711C6.90237 6.31658 6.90237 5.68342 7.29289 5.29289C7.68342 4.90237 8.31658 4.90237 8.70711 5.29289L12.7071 9.29289C13.0976 9.68342 13.0976 10.3166 12.7071 10.7071L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071Z"></path>
+      </svg>
+    </button>
     <div class="cite-slider__wrap">
-      <div class="cite-slider__pagination">
-        <div class="cite-slider__tab active" onclick="showSlide(this, 'js-slide-1');"><img src="img/pic/fedorov.jpg" alt="Максим Федоров"></div>
-        <div class="cite-slider__tab" onclick="showSlide(this, 'js-slide-2');"><img src="img/pic/kejriwal.jpg" alt="Анил Кеджривал"></div>
-        <div class="cite-slider__tab" onclick="showSlide(this, 'js-slide-3');"><img src="img/pic/kruglova.jpg" alt="Any Photo"></div>
-      </div>
-      <div class="cite-slider__slides">
-        <div class="cite-slider__slide active" id="js-slide-1">
-          <blockquote class="cite-slider__quote">Спасибо AdGram за создание такой платформы,раньше мне приходилось списываться с каждым админом,договариваться о датах размещения и ценах, контролировать выход постов и время их нахождения в каналах, но теперь я могу заранее посмотреть цену размещения и купить нужную мне рекламу без траты времени на общение и переговоры, персональные выплаты и отслеживания.</blockquote>
-          <div class="cite-slider__footer">
-            <div class="cite-slider__author-name">Максим Федоров</div>
-            <div class="cite-slider__author-status">Администратор Telegram-канал "Интересные факты”</div>
+      <div class="cite-slider-slider" id="js-cite-slider">
+        <div>
+          <div class="container">
+            <div class="cite-slider__slide">
+              <div class="cite-slider__slide-wrap">
+                <div class="cite-slider__slide-bar">
+                  <div class="cite-slider__slide-ava">
+                    <img src="img/pic/fedorov.jpg" alt="Максим Федоров">
+                  </div>
+                  <div class="cite-slider__footer">
+                    <div class="cite-slider__author-name">Максим Федоров</div>
+                    <div class="cite-slider__author-status">Администратор Telegram-канал "Интересные факты”</div>
+                  </div>
+                </div>
+                <div class="cite-slider__slide-main">
+                  <blockquote class="cite-slider__quote">Спасибо AdGram за создание такой платформы,раньше мне приходилось списываться с каждым админом,договариваться о датах размещения и ценах, контролировать выход постов и время их нахождения в каналах, но теперь я могу заранее посмотреть цену размещения и купить нужную мне рекламу без траты времени на общение и переговоры, персональные выплаты и отслеживания.</blockquote>                  
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cite-slider__slide" id="js-slide-2">
-          <blockquote class="cite-slider__quote">Раньше мне было сложно самостоятельно найти подходящие предложения от рекламодателей, а переговоры насчет текстов, форматов картинок к постам и ограничений по количеству символов затягивались на недели, не говоря уже про периодические сложности с выплатами и требования полноценных файлов с отчетами. Спасибо AdGram, доходность канала увеличилась в несколько раз. Очень круто, что все собрано в одном месте и больше не нужно тратить уйму времени на переговоры и пересчеты, а значит, появилось больше времени на развитие канала, все предельно просто и прозрачно!</blockquote>
-          <div class="cite-slider__footer">
-            <div class="cite-slider__author-name">Анил Кеджривал</div>
-            <div class="cite-slider__author-status">Администратор Telegram-канал-Hindi MOVIES</div>
+        <div>
+          <div class="container">
+            <div class="cite-slider__slide">
+              <div class="cite-slider__slide-wrap">
+                <div class="cite-slider__slide-bar">
+                  <div class="cite-slider__slide-ava">
+                    <img src="img/pic/kejriwal.jpg" alt="Анил Кеджривал">
+                  </div>
+                  <div class="cite-slider__footer">
+                    <div class="cite-slider__author-name">Анил Кеджривал</div>
+                    <div class="cite-slider__author-status">Администратор Telegram-канал-Hindi MOVIES</div>
+                  </div>
+                </div>
+                <div class="cite-slider__slide-main">
+                  <blockquote class="cite-slider__quote">Мне было сложно самостоятельно найти подходящие предложения от рекламодателей, а переговоры насчет текстов, форматов картинок к постам и ограничений по количеству символов затягивались на недели, не говоря уже про периодические сложности с выплатами и требования полноценных файлов с отчетами. Спасибо AdGram, доходность канала увеличилась в несколько раз.</blockquote> 
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cite-slider__slide" id="js-slide-3">
-          <blockquote class="cite-slider__quote">Мы находимся в постоянном поиске новых рекламных возможностей для наших клиентов,особенно для сложного сегмента табачной и алкогольной продукции. Благодаря AdGram мы смогли расширить спектр своих предложений, открыв принципиально новый медийный канал, в котором нет создающей немало сложностей модерации. Отдельно хочется поблагодарить команду биржи за качественную работу.</blockquote>
-          <div class="cite-slider__footer">
-            <div class="cite-slider__author-name">Анастасия Круглова</div>
-            <div class="cite-slider__author-status">Администратор Telegram-канал-"Мода и красота"</div>
+        <div>
+          <div class="container">
+            <div class="cite-slider__slide">
+              <div class="cite-slider__slide-wrap">
+                <div class="cite-slider__slide-bar">
+                  <div class="cite-slider__slide-ava">
+                    <img src="img/pic/kruglova.jpg" alt="Any Photo">
+                  </div>
+                  <div class="cite-slider__footer">
+                    <div class="cite-slider__author-name">Анастасия Круглова</div>
+                    <div class="cite-slider__author-status">Администратор Telegram-канал-"Мода и красота"</div>
+                  </div>
+                </div>
+                <div class="cite-slider__slide-main">
+                  <blockquote class="cite-slider__quote">Мы находимся в постоянном поиске новых рекламных возможностей для наших клиентов,особенно для сложного сегмента табачной и алкогольной продукции. Благодаря AdGram мы смогли расширить спектр своих предложений, открыв принципиально новый медийный канал, в котором нет создающей немало сложностей модерации. Отдельно хочется поблагодарить команду биржи за качественную работу.</blockquote>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
-<script>
-  function showSlide($this, slideId){
-    if( !($this.classList.contains('active')) ){
-      document.querySelector('.cite-slider__tab.active').classList.remove('active');
-      document.querySelector('.cite-slider__slide.active').classList.remove('active');
-      $this.classList.add('active');
-      document.getElementById(slideId).classList.add('active');
-    }
-  }
-</script>

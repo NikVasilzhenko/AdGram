@@ -131,7 +131,10 @@
       img{width: 808px;}
     }
     &--5{
-      img{width: 808px;}
+      left: 60px;
+      img{
+        width: 808px;        
+      }
     }
     &--6{
       img{width: 704px;}
@@ -261,6 +264,7 @@
         }
       }
       &--5{
+        margin-left: 40px;
         img{
           width: auto;
           height: 350px;

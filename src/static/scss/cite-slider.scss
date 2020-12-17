@@ -1,61 +1,35 @@
 .cite-slider{
-  margin: 96px 0 160px;
-  &__wrap{
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  &__pagination{
-    margin-bottom: 40px;
+  margin: 100px 0;
+  position: relative;
+  .slick-track{
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  &__tab{
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 12px;
-    border: 3px solid #EBEDEE;
-    cursor: pointer;
-    &.active{
-      border-color: #0088cc;
-    }
   }
   &__quote{
     display: block;
     padding: 0;    
     position: relative;
     z-index: 2;
-    margin-bottom: 32px;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: .2px;
-    &::before,
-    &::after{
+    color: #005782;
+    &::before{
       content: '';
       display: block;
       position: absolute;
       z-index: -1;
-      width: 98px;
-      height: 80px;
+      width: 96px;
+      height: 76px;
       background: center center no-repeat;
       background-size: contain;
-    }
-    &::before{
-      top: 0;
-      left: -100px;
-      background-image: url(../img/svg/quote-grey-open.svg);
-    }
-    &::after{
-      bottom: 0;
-      right: -100px;
-      background-image: url(../img/svg/quote-grey-close.svg);
-    }
+      top: -28px;
+      left: -30px;
+      background-image: url(../img/svg/quote-blue.svg);
+    }    
   }
-  &__footer{text-align: center;}
   &__author-name{
     font-weight: bold;
     font-size: 19px;
@@ -70,29 +44,115 @@
     color: #7D8B92;
   }
   &__slide{
-    display: none;
-    &.active{display: block;}
+    padding-top: 30px;
+    max-width: calc(100vw - 280px);
+    margin: 0 auto;
+    &-wrap{
+      //max-width: 1010px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-ava{
+      width: 192px;
+      height: 192px;
+      border-radius: 50%;
+      overflow: hidden;    
+      flex-shrink: 0;
+      margin-bottom: 32px;
+    }
+    &-bar{
+      width: 192px;
+      text-align: center;
+    }
+    &-main{
+      width: calc(100% - 192px - 64px);
+    }
   }
-  @media only screen and (max-width : 991px){
+  @media only screen and (max-width : 1199px){
     &__quote{
-      &::before{left: 0;}
-      &::after{right: 0;}
+      margin-bottom: 24px;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0;
+    }
+    &__author-name{
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: .5px;
+      margin-bottom: 2px;
+    }
+    &__slide{
+      max-width: calc(100vw - 140px);
+      &-ava{
+        width: 160px;
+        height: 160px;
+      }
+      &-bar{width: 160px;}
+      &-main{
+        width: calc(100% - 160px - 56px);
+      }
     }
   }
   @media only screen and (max-width : 767px){
-    margin: 64px 0;
-    &__pagination{margin-bottom: 22px;}
-    &__tab{
-      width: 38px;
-      height: 38px;
-      margin: 0 9px;
-    }
+    margin: 40px 0;
+    .slick-track{align-items: flex-start;}
     &__quote{
-      font-size: 19px;
-      line-height: 28px;
-      letter-spacing: .15px;
-      &::before,
-      &::after{display: none;}
+      text-align: center;
+      &::before{
+        width: 69px;
+        height: 54px;
+        top: -13px;
+        left: 0;
+      }    
     }
+    &__slide{
+      max-width: 100%;
+      padding: 0;
+      &-wrap{display: block;}
+      &-ava{
+        width: 96px;
+        height: 96px;
+        margin: 0 auto 32px;
+      }
+      &-bar{
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &-main{width: 100%;}
+    }
+  }
+}
+
+.cite-slider-arrow{
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 140px;
+  svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: #08c;
+  }
+  &__prev{left: 3vw;}
+  &__next{right: 3vw;}
+  @media only screen and (max-width : 1599px){
+    &__prev{left: 1vw;}
+    &__next{right: 1vw;}
+  }
+  @media only screen and (max-width : 1499px){
+    &__prev{left: 0;}
+    &__next{right: 0;}
+  }
+  @media only screen and (max-width : 1199px){
+    width: 70px;
+    height: 70px;
+  }
+  @media only screen and (max-width : 767px){
+    top: 48px;
   }
 }

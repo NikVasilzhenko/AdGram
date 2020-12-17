@@ -1,19 +1,29 @@
 .integrations{
-  margin: 200px 0;
+  padding: 200px 0;
+  background: url(../img/svg/integrations-bg.svg) center center no-repeat;
+  background-size: auto 100%;
   &__wrap{
     max-width: 620px;
     margin: 0 auto;
     text-align: center;
   }
+  &__footer{
+    display: flex;
+    justify-content: center;
+  }
   .sec-title{max-width: unset;}
   .txt{margin-bottom: 32px;}
+  @media only screen and (max-width : 1024px){
+    background: none;
+  }
   @media only screen and (max-width : 991px){
-    margin: 128px 0;
+    padding: 128px 0;
     &__wrap{max-width: 712px;}
     .sec-title{margin-bottom: 32px;}
   }
   @media only screen and (max-width : 767px){
-    margin: 64px 0;
+    padding: 64px 0;
     &__wrap{text-align: left;}
+    &__footer{display: block;}
   }
 }
